@@ -1,0 +1,71 @@
+<!DOCTYPE HTML5>
+<head>
+<title>cottonvoid</title>
+<style>
+body {
+	margin: 0;
+	background-color: #010101;
+}
+
+p {
+	margin: .1em;
+}
+
+.faketerm {
+	
+	padding: 2em;
+	width: 50%;
+	font-family: 'Consolas';
+	background-color: #151020;
+	color: #f0f0f0;
+	font-size: 250%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 13px 13px 13px 13px;
+	-webkit-border-radius: 13px 13px 13px 13px;
+	-moz-border-radius: 13px 13px 13px 13px;
+	border: 4px solid #5b4a5f;
+}
+
+@media screen and (max-width:800px) {
+	.faketerm {
+		display: grid;
+		place-items: center;
+		height: 100%;
+		width: 100%;
+		font-size: 200%;
+		border-radius: unset;
+		border-radius: unset;
+		-webkit-border-radius: unset;
+		-moz-border-radius: unset;
+		border: unset;
+		position: unset;
+		top: unset;
+		left: unset;
+		transform: unset;
+	}
+}
+
+.prompt {
+	color: #b28fb2;
+}
+.command {
+	color: #8fb2d8;
+}
+a {
+	color: inherit;
+}
+</style>
+</head>
+<body>
+<div class="faketerm">
+<p><span><span class="prompt">$ </span><span class="command">whoami</span></p>
+<p><span class="output">cottonvoid</span></p>
+<p><span class="prompt">$ </span><span class="command">cat bio.txt</span></p>
+<p><span class="output">yet another wanderer of this realm</span></p>
+<p><span class="prompt">$ </span><span class="command">cat links.txt</span></p>
+<p><span class="output">github: <a href="https://github.com/cottonvoid">https://github.com/cottonvoid</a></span></p>
+<p><span class="output">discord: @cottonvoid</span></p>
+</div>
